@@ -49,21 +49,20 @@ extension SampleViewController : UITextFieldDelegate {
 
 extension SampleViewController /*: UICollectionViewDataSource*/ {
     
-    //1
     override func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
         return searches.count
     }
     
-    //2
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return searches[section].searchResults.count
     }
     
-    //3
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) 
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! SampleCell
+        let flickrPhoto = photoForIndexPath(indexPath)
         cell.backgroundColor = UIColor.blackColor()
-        // Configure the cell
+        cell.imageView.image = flickrPhoto.thumbnail
+        
         return cell
     }
 }

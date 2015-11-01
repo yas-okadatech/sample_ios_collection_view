@@ -15,6 +15,7 @@
 		0E69167C1BE466B200CFBA7D /* SampleCollectionViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E69167B1BE466B200CFBA7D /* SampleCollectionViewUITests.swift */; };
 		0E69168A1BE4DB5D00CFBA7D /* SampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6916891BE4DB5D00CFBA7D /* SampleViewController.swift */; };
 		0E69168C1BE4DE2700CFBA7D /* FlickrSearcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E69168B1BE4DE2700CFBA7D /* FlickrSearcher.swift */; };
+		0E6916901BE610BA00CFBA7D /* SampleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E69168F1BE610BA00CFBA7D /* SampleCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		0E69167D1BE466B200CFBA7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0E6916891BE4DB5D00CFBA7D /* SampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleViewController.swift; sourceTree = "<group>"; };
 		0E69168B1BE4DE2700CFBA7D /* FlickrSearcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlickrSearcher.swift; sourceTree = "<group>"; };
+		0E69168F1BE610BA00CFBA7D /* SampleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SampleCell.swift; path = ../SampleCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		0E69165A1BE466B100CFBA7D /* SampleCollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				0E69168F1BE610BA00CFBA7D /* SampleCell.swift */,
 				0E69168B1BE4DE2700CFBA7D /* FlickrSearcher.swift */,
 				0E69165B1BE466B200CFBA7D /* AppDelegate.swift */,
 				0E69165F1BE466B200CFBA7D /* Main.storyboard */,
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E69168C1BE4DE2700CFBA7D /* FlickrSearcher.swift in Sources */,
+				0E6916901BE610BA00CFBA7D /* SampleCell.swift in Sources */,
 				0E69168A1BE4DB5D00CFBA7D /* SampleViewController.swift in Sources */,
 				0E69165C1BE466B200CFBA7D /* AppDelegate.swift in Sources */,
 			);
